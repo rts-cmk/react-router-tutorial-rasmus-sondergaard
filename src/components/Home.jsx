@@ -34,14 +34,19 @@ export default function Home(){
                 <p>To make a page Route you'll have to make the file/pages you want the website be able to navigate to. The image below is an example where there's been made a About, Contact and Home .jsx file</p>
                 <p>Afterwards inside the Routes class you'll have to make a Route class as seen in the image</p>
                 <p>The first Route has an index and element.</p>
-                <p>Index is used to tell react-router which page should you main page/the page your website start on</p>
+                <p>Index is used to tell react-router which page should be yout main page/the page your website starts on</p>
                 <p>Element is used to tell what file is conected to what page</p>
                 <p>Path which is used in the two other Route classes is used to tell what name the endpoint of the page you are routing to should be called. The example path="about" in the image would then be "yourWebsite/about" in the Url</p>
                 <img src="../../public/ReactComponentRouting.png" alt="" />
             </article>
             <article>
                 <h2>Navigating between pages</h2>
-                <p>To be able to navigate between pages on your website you will need to make use of the Link class and/or useNavigate function</p>
+                <p>To be able to navigate between pages on your website you will need to make use of the Link class and/or useNavigate function. Both imported from "react-router" as seen in the example below</p>
+                <p>Link uses a to="" atribute where you write the endpoint the Link should move the user to on your website. The example below has written to="/contact" to move the user to yourWebsite/contact</p>
+                <p>useNavigate is a bit different. You use the function to move the user to another page when a "trigger" has happend.</p>
+                <p>The trigger can be something the user does on the website for example filling out a login. When the user has entered their username and password you then tell the useNavigate to move the user to another page</p>
+                <p>In the example below there has been made a const named "navigate" = the useNavigate Function</p>
+                <p>Then there's made a button saying that on a click it should trigger the "navigate" that is written like navigate("/about") to tell it that it should navigate to yourWebsite/about</p>
                 <p></p>
                 <video width="500px" height="300px" src={pageNavigation} muted controls/>
                 <img src="../../public/Link.png" alt="" />
