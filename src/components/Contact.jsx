@@ -1,14 +1,13 @@
-import { NavLink } from "react-router";
+import { useNavigate } from "react-router";
 
 export default function Contact(){
+
+    const navigate = useNavigate()
+
     return(
     <>
         <p>Here is Contact</p>
-        <nav>
-            <NavLink to="/">
-                Go to Home Page
-            </NavLink>
-        </nav>
+        <button onClick={() => navigate("/about")}>Go to About Page</button>
     </>
     )
 }
