@@ -11,8 +11,8 @@ export default function App() {
       <Routes>
         <Route path="react-router-tutorial-rasmus-sondergaard">
           <Route index element={<Home />} />
-          <Route path="react-router-tutorial-rasmus-sondergaard/about" element={<About />} />
-          <Route path="react-router-tutorial-rasmus-sondergaard/contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
