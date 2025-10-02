@@ -7,11 +7,6 @@ import "./Home.css"
 export default function Home(){
     return(
     <>
-        <nav>
-            <Link to="/about">
-                Go to About Page
-            </Link>
-        </nav>
         <section>
             <h1>How to: React-Router</h1>
             <article>
