@@ -9,10 +9,12 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home/>}/>
-        <Route path="about" element={<About/>}/>
-        <Route path="contact" element={<Contact/>}/>
-        <Route path="*" element={<Error/>}/>
+        <Route path="react-router-tutorial-rasmus-sondergaard">
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
