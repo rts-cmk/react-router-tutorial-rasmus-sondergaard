@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "docs",
+    emptyOutDir: true
   },
-  base: "https://rts-cmk.github.io/react-router-tutorial-rasmus-sondergaard/"
+  base: "/react-router-tutorial-rasmus-sondergaard/"
 })
