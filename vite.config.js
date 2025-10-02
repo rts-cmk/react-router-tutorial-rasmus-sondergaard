@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: "docs"
-  }
+    outDir: "docs",
+  },
+  base: "https://rts-cmk.github.io/react-router-tutorial-rasmus-sondergaard/"
 })
