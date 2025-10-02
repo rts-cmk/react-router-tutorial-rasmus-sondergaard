@@ -7,7 +7,7 @@ export default function Contact(){
     return(
     <>
         <p>Here is Contact</p>
-        <button onClick={() => navigate("/about")}>Go to About Page</button>
+        <button onClick={() => navigate("/")}>Go to Home Page</button>
     </>
     )
 }
