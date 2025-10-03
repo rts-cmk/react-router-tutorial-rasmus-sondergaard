@@ -26,7 +26,7 @@ export default function Home(){
                 <h2>Setting up BrowserRouter</h2>
                 <p>After insterlation, to set up your React-Router you first have to import BrowserRouter, Routes and Route from "react-router" and set it up as seen in the image below. <br />
                 BrowserRouter and Router is the focus here and the Route part is explained in the next step.</p>
-                <img src="../../public/ReactBrowserRouter.png" alt="" />
+                <img src="ReactBrowserRouter.png" alt="" />
             </article>
             <article>
                 <h2>Routing pages</h2>
@@ -36,7 +36,7 @@ export default function Home(){
                 <p>Index is used to tell react-router which page should be your main page/the page your website starts on. <br />
                 Element is used to tell what file is conected to what page. <br />
                 Path, which is used in the two other Route componentes, is used to tell what name the endpoint of the page you are routing to should be called. The example path="about" in the image would then be "yourWebsite/about" in the Url.</p>
-                <img src="../../public/ReactComponentRouting.png" alt="" />
+                <img src="ReactComponentRouting.png" alt="" />
             </article>
             <article>
                 <h2>Navigating between pages</h2>
@@ -47,8 +47,8 @@ export default function Home(){
                 The trigger can be something the user does on the website. The example could be filling out a login. When the user has entered their username and password you then tell the useNavigate to move the user to another page.</p>
                 <p>In the example below, there has been made a const named "navigate" = the useNavigate Function. <br />
                 Then there's made a button saying that on a click it should trigger the "navigate" that is written like navigate("/about") to tell it that it should navigate to yourWebsite/about.</p>
-                <img src="../../public/Link.png" alt="" />
-                <img src="../../public/UseNavigate.png" alt="" />
+                <img src="Link.png" alt="" />
+                <img src="UseNavigate.png" alt="" />
                 <video src={pageNavigation} muted controls/>
             </article>
             <article>
@@ -58,7 +58,7 @@ export default function Home(){
                 <p>As seen in the image below, you make another Route component with element = the file you want, and path that = "*". <br />
                 The "*" means that every endpoint thats not any endpoint you've already made, should direct the user to the error page.</p>
                 <p>In the error page you can simply write whatever you feel necessary. In the video below there's just written Error in a h1 tag.</p>
-                <img src="../../public/Error.png" alt="" />
+                <img src="Error.png" alt="" />
                 <video src={ErrorPageVid} muted controls/>
             </article>
         </section>
